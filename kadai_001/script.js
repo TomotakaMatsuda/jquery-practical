@@ -2,12 +2,13 @@ $(function(){
 
     //カルーセルの設定
     $('.slider').slick({
-		autoplay: true,
-        autoplaySpeed: 5000,
-		dots: true,
-        fade: true,
-        cssEase: 'linear',
-	});
+		  autoplay: true,
+      arrows: false,
+      autoplaySpeed: 5000,
+		  dots: true,
+      fade: true,
+      cssEase: 'linear',
+	  });
 
     //リンクホバー時の表示
     $('.animation').on('mouseover', function () {
@@ -18,8 +19,8 @@ $(function(){
        $('.animation').on('mouseout', function () {
          $(this).animate({
            opacity: 1.0,
-         }, 500);
-       });
+        }, 500);
+      });
 
     //topに戻るボタンの表示
     $(window).scroll(function () {
