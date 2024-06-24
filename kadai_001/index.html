@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>MyProfile</title>
+        <meta charset="utf-8">
+        <meta name="description" content="ゼロからHTML/CSSでポートフォリオサイトを作ろうの課題です。">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100..900&display=swap" rel="stylesheet">
+        <meta name="viewport" content="width=device-width,initial-scale=1.0">
+        <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css">
+        <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick-theme.css">
+        <link rel="stylesheet" href="style.css">
+    <body>
+        <header>
+            <h1 class="animation" id="header-h1">MyProfile</h1>
+            <nav id="nav">
+                <a class="animation" id="a-about" href="index.html#about">About</a>
+                <a class="animation" id="a-works" href="index.html#works">Works</a>
+            </nav>
+        </header>
+        <main>
+            <article>
+                <section id="main-visual">
+                    <div>
+                        <ul class="slider">
+                            <li><img src="images/main.png" alt="アイキャッチ画像1"></li>
+                            <li><img src="images/main2.png" alt="アイキャッチ画像2"></li>
+                            <li><img src="images/main3.png" alt="アイキャッチ画像3"></li>
+                        </ul>
+                    </div>
+                </section> 
+                <section id="about" class="block">
+                    <h1>About</h1>
+                    <div>
+                        <img src="images/about.png" alt="アイコン">
+                        <div>
+                            <h2>Kazuki Asahina</h2>
+                            <ul>
+                                <li>25歳 長野県佐久市出身</li>
+                                <li>ソフトウェア業界でマーケティングに従事</li>
+                                <li>趣味はカメラ、愛機はCanon</li>
+                                <li>自然を撮影するのが好きで、海や山によく行く</li>
+                            </ul>
+                        </div>
+                    </div>
+                </section>
+                <section id="works" class="block">
+                    <h1>Works</h1>
+                    <div id="container">
+                        <div class="works-content">
+                                <img class="js-modalWindow" src="images/works1.png" alt="日本海">
+                            <p>新潟を訪れた際に、日本海の雄大さに魅了されて撮影した１枚</p>
+                        </div>
+                        <div class="works-content">
+                            <img class="js-modalWindow" src="images/works2.png" alt="御嶽山">
+                            <p>地元長野の木曽町から撮影した、冠雪した御嶽山</p>
+                        </div>
+                        <div class="works-content">
+                            <img class="js-modalWindow" src="images/works3.png" alt="京都の町">
+                            <p>京都で撮影した、明け方の古き良き日本の町並み</p>
+                        </div>
+                    </div>
+                </section>
+            </article>
+        </main>
+        <footer>
+            <p>&copy;MyProfile. All rights reserved.</p>
+        </footer>
+
+        <button id="js-pagetop" class="pagetop">TOP</button>
+
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+        integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+        <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+
+        <script src="script.js"></script>
+    </body>
+</html>
